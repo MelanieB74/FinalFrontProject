@@ -1,0 +1,45 @@
+.body {
+    background-color: rgb(167, 197, 221);
+    height: 1100px;
+}
+
+img {
+    width: 150px;
+    border: solid darkred;
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3 {
+    background-color: rgb(167, 197, 221);
+    text-align: center;
+    font-family: Segoe Print; 
+    color: darkred; 
+    font-weight: bold; 
+    text-decoration: underline; 
+    font-size: 40px ; 
+    text-shadow: 2px 2px 4px paleturquoise;
+}
+
+h5 {
+    text-align: center;
+    font-family: Segoe Print;
+    color: darkblue;
+    font: bold; 
+    text-decoration: underline;
+}
+
+p {
+    font-family: Segoe Print;
+    color: black;
+    font: bold; 
+}
+
+li {
+    font-family: Segoe Print;
+    color: black;
+    font: bold; 
+}
+

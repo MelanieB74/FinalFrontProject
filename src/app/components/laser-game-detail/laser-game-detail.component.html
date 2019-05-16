@@ -1,0 +1,41 @@
+<div class="body">
+
+  <div class='client panel panel-default'>
+      
+    <div class="panel-heading">
+      <br/> <h3> Détails de l'Activité sélectionnés</h3> <br/>
+    </div>
+      
+    <div>
+      <h5> Thème : </h5>
+        <p> {{ activite?.theme }} </p>
+     
+      <h5> TARIFS: </h5>
+        <ul>
+          <li> Normal: <b>{{ activite?.tarifNormal }}</b> € </li>
+          <li> Jeune: <b>{{ activite?.tarifJeune }}</b> € </li>
+          <li> Etudiant: <b>{{ activite?.tarifEtudiant }}</b> € </li> 
+        </ul>
+      
+      <h5> NOMBRE DE PERSONNES: </h5>
+        <ul>
+          <li> Maximum: <b>{{ activite?.nbMax }}</b> </li>
+          <li> Minimul: <b>{{ activite?.nbMin }}</b> </li>
+        </ul>
+      
+      <h5> Description : </h5>
+        <p> {{ activite?.description }} </p>
+
+    </div>
+      
+  </div>
+      
+  <br/> <br/>
+      
+  <p> 
+    <a (click)="goBackButtonPressed()" style='cursor: pointer; color: darkblue; border: 1px dashed darkblue'>Retour</a> &nbsp; &nbsp;
+    <a (click)="editButtonPressed()" style='cursor: pointer; color: darkblue; border: 1px dashed darkblue'>Modifier</a> &nbsp; &nbsp;
+    <a (click)="deleteButtonPressed()" style='cursor: pointer; color: darkblue; border: 1px dashed darkblue'>Supprimer</a> 
+  </p>
+      
+</div>

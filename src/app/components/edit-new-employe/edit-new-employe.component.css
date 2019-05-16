@@ -1,0 +1,25 @@
+.panel-body {
+    background-color: beige;
+    height: 640px;
+}
+
+h3 {
+    background-color: beige;
+    text-align: center;
+    font-family: Segoe Print; 
+    color: darkred; 
+    font-weight: bold; 
+    text-decoration: underline; 
+    font-size: 40px ; 
+    text-shadow: 2px 2px 4px paleturquoise;
+}
+
+.input-group {
+    width: 300px;
+}
+
+.formulaire {
+    margin-left: 40%;
+    font-family: Segoe Print; 
+}
+

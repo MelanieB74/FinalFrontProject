@@ -1,0 +1,33 @@
+<div class="body">
+
+  <div class='client panel panel-default'>
+
+    <div class="panel-heading">
+      <br/> <h3> Détails du client sélectionné</h3> <br/>
+    </div>
+
+    <div>
+      <h5> Données personnelles </h5>
+        <p> Nom: {{ client.nom }} </p>
+        <p> Téléphone: {{ client.tel }} </p>
+        <p> Mail: {{ client.mail }} </p>
+
+      <h5> Statut </h5>
+        <p>Staut: {{ client.statut }} </p>
+
+      <h5> Compte </h5>
+        <p>Username: {{ client.userName }} </p>
+        <p>Password: {{ client.passWord }} </p>
+    </div>
+
+  </div>
+
+  <br/> <br/>
+
+  <p> 
+    <a (click)="goBackButtonPressed()" style='cursor: pointer; color: darkblue; border: 1px dashed darkblue'>Retour</a> &nbsp; &nbsp;
+    <a (click)="editButtonPressed()" style='cursor: pointer; color: darkblue; border: 1px dashed darkblue'>Modifier</a> &nbsp; &nbsp;
+    <a (click)="deleteButtonPressed()" style='cursor: pointer; color: darkblue; border: 1px dashed darkblue'>Supprimer</a> 
+  </p>
+
+</div>

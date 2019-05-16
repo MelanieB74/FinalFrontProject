@@ -1,0 +1,38 @@
+<div class="newReservation panel panel-default">
+  
+  <div class="panel-body">
+    <br/> <h3> Réserver une activité </h3> <br/>
+  
+    <div class="formulaire">
+      <div class="input-group">
+          <span class="input-group-addon">Nom: </span>
+          <input style="margin-left: 10%" class="form-control" [(ngModel)]="reservation_in_progress.client.nom" type="text" placeholder="ajouter Nom" name="nom" />
+      </div> <br/>
+      <div class="input-group">
+          <span class="input-group-addon">Tel: </span>
+          <input style="margin-left: 15%" class="form-control" [(ngModel)]="reservation_in_progress.client.tel" type="text" placeholder="ajouter Telephone" name="tel" />
+      </div> <br/>
+      <div class="input-group">
+          <span class="input-group-addon">Mail: </span>
+          <input style="margin-left: 11%" class="form-control" [(ngModel)]="reservation_in_progress.client.mail" type="text" placeholder="ajouter Mail" name="mail" />
+      </div> <br/>
+      <div class="input-group">
+          <span class="input-group-addon">Date: </span>
+          <input style="margin-left: 10%" class="form-control" [(ngModel)]="reservation_in_progress.date" type="text" placeholder="Date activite" name="date"/>
+      </div> <br/>
+      <div class="input-group">
+          <span class="input-group-addon">Heure: </span>
+          <input style="margin-left: 7%" class="form-control" [(ngModel)]="reservation_in_progress.heure" type="text" placeholder="Heure activite" name="heure"/>
+      </div> <br/>
+      <div class="input-group">
+        <span class="input-group-addon">Activite: </span>
+        <input style="margin-left: 4%" class="form-control" [(ngModel)]="reservation_in_progress.activite.id" type="text" placeholder="activite" name="activite" />
+      </div> <br/>
+      
+      <div>
+        <input type="button" value="Valider Reservation" (click)="addUpdateReservationClicked()" style="background-color: rgb(167, 197, 221); margin-left: 50px"/>
+        <input type="button" value="Retour" (click)="goBackButtonPressed()" style="background-color: rgb(167, 197, 221); margin-left: 50px"/>
+      </div>
+    </div>
+  </div>
+</div>

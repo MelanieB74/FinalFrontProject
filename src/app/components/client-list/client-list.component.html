@@ -1,0 +1,14 @@
+<div class="body">
+  
+  <br/> <h3>Liste des Clients</h3> <br/>
+
+  <div class="button">
+    <input type="button" value="Ajouter un Client" (click)="addNewClientPressed()" style="background-color: paleturquoise; border: darkblue solid 1px; font-family: Segoe Print; font: bold; color: black"/>
+  </div> <br/>
+
+  <h5> Nom / mail: </h5> <br/>
+  <app-client-summary *ngFor="let client of clients" [client]="client" (userClick)="userClickedOnClient($event)"></app-client-summary>
+
+  <div style="clear: both"></div>
+
+</div>

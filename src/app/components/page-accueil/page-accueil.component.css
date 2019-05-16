@@ -1,0 +1,27 @@
+h3 {
+    background-color: beige;
+    text-align: center;
+    font-family: Segoe Print; 
+    color: darkred; 
+    font-weight: bold; 
+    font-size: 40px ; 
+    text-shadow: 2px 2px 4px paleturquoise;
+}
+
+.body {
+    background-color: beige;
+    font-family: Segoe Print;
+    text-align: center;
+    height: 600px;
+}
+
+.p-galleria {
+    background-color: beige;
+    text-align: center;
+}
+
+.ui-grid-col-12 {
+    background-color: rgb(167, 197, 221); 
+    border: 2px solid; 
+    border-color: darkblue;
+}

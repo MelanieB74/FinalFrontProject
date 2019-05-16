@@ -1,0 +1,16 @@
+.body {
+    background-color: beige;
+    height: 590px;
+}
+
+p {
+    font-family: Segoe Print;
+    font: bold;
+    text-align: center;
+}
+
+img {
+    width: 500px;
+    border: solid darkred;
+    border-radius: 20px;
+}

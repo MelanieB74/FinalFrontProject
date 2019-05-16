@@ -1,0 +1,13 @@
+<div class="body">
+
+  <br/> <h3>Liste des Escapes Games</h3> <br/>
+
+  <div class="button">
+    <input type="button" value="Ajouter une Activité" (click)="addNewActivitePressed()" style="background-color: paleturquoise; border: darkblue solid 1px; font-family: Segoe Print; font: bold; color: black"/>
+  </div> <br/>
+
+  <app-escape-game-summary *ngFor="let activite of activites" [activite]="activite" (userClick)="userClickedOnActivite($event)"></app-escape-game-summary> 
+
+  <div style="clear: both"></div>
+
+</div>

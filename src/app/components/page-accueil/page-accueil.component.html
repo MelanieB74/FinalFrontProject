@@ -1,0 +1,23 @@
+<div class="body">
+  <br/>
+  <h3> Bienvenue au centre <i>Escap'Life</i>, où familles et amis peuvent se retrouver autour d'une activité ! </h3>
+  <br/><br/><br/>
+
+  <div class="p-grid">
+    <div class="p-col-3">
+      <p-galleria [images]="images" panelWidth="300" panelHeight="250" showFilmstrip="true"></p-galleria>
+    </div>
+    
+    <div class="p-col-9">
+      <br/><br/>
+      <p-carousel numVisible="1" headerText="Activités que nous proposons" [value]="activites">
+        <ng-template let-activites pTemplate="item">
+          <div class="ui-grid-col-12"> 
+            <img class="center" src="assets/images/caroussel/{{activites.id}}.jpg"
+              style="width: 150px; height: 120px" /> &nbsp; &nbsp; &nbsp; {{ activites.description }} </div>
+        </ng-template>
+      </p-carousel>
+    </div>
+  </div>
+
+</div>

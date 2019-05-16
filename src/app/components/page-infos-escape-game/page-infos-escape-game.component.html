@@ -1,0 +1,137 @@
+<div class="body">
+
+    <br/> <h3> Activité : Escape Game </h3> <br/>
+
+    <p-accordion>
+      <p-accordionTab header="Salle Kids" [selected]="true" (onOpen)="onTabOpen($event)">
+        <div class="p-grid">
+          <div class="p-col-3">
+              <div class="cover-photo-holder">
+                <img src="{{ '/assets/imagesPagesInfos/escapegame_mns1.JPG' }}" />
+              </div>
+          </div>
+          <div class="p-col-7">
+            <div class="p-grid">
+              <div class="p-col-3">
+                <h5> Mission </h5>
+                <p> <b>{{ act?.mission }}</b> </p> <br/>
+                <h5> n° : {{ act?.id }} </h5>
+              </div>
+              <div class="p-col-3">
+                <h5> TARIFS: </h5>
+                <ul>
+                  <li> Normal: <b>{{ act?.tarifNormal }}</b> € </li>
+                  <li> Jeune: <b>{{ act?.tarifJeune }}</b> € </li>
+                  <li> Etudiant: <b>{{ act?.tarifEtudiant }}</b> € </li> 
+                </ul>
+              </div>
+              <div class="p-col-4">
+                <h5> NOMBRE DE PERSONNES: </h5>
+                <ul>
+                  <li> Maximum: <b>{{ act?.nbMax }}</b> </li>
+                  <li> Minimul: <b>{{ act?.nbMin }}</b> </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="p-col-1">
+              <div class="cover-photo-holder">
+                <img src="{{ '/assets/imagesPagesInfos/escapegame_mns2.JPG' }}" />
+              </div>
+          </div>
+          <div class="p-col-12" style="text-align: center">
+              <h5> Description: </h5>
+              <p> <b>{{ act?.description }}</b> </p>
+          </div>
+        </div>
+      </p-accordionTab>
+  
+      <p-accordionTab header="Salle 2 : Mode DUEL">
+        <div class="p-grid">
+          <div class="p-col-3">
+              <div class="cover-photo-holder">
+                <img src="{{ '/assets/imagesPagesInfos/escapegame_prison1.JPG' }}" />
+              </div>
+          </div>
+          <div class="p-col-7">
+            <div class="p-grid">
+              <div class="p-col-3">
+                <h5> Mission </h5>
+                <p> <b>{{ acti?.mission }}</b> </p> <br/>
+                <h5> n° : {{ acti?.id }} </h5>
+              </div>
+              <div class="p-col-3">
+                <h5> TARIFS: </h5>
+                <ul>
+                  <li> Normal: <b>{{ acti?.tarifNormal }}</b> € </li>
+                  <li> Jeune: <b>{{ acti?.tarifJeune }}</b> € </li>
+                  <li> Etudiant: <b>{{ acti?.tarifEtudiant }}</b> € </li> 
+                </ul>
+              </div>
+              <div class="p-col-4">
+                <h5> NOMBRE DE PERSONNES: </h5>
+                <ul>
+                  <li> Maximum: <b>{{ acti?.nbMax }}</b> </li>
+                  <li> Minimul: <b>{{ acti?.nbMin }}</b> </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="p-col-1">
+              <div class="cover-photo-holder">
+                <img src="{{ '/assets/imagesPagesInfos/escapegame_prison2.JPG' }}" />
+              </div>
+          </div>
+          <div class="p-col-12" style="text-align: center">
+              <h5> Description: </h5>
+              <p> <b>{{ acti?.description }}</b> </p>
+          </div>
+        </div>
+      </p-accordionTab>
+  
+      <p-accordionTab header="Salle 3">
+          <div class="p-grid">
+              <div class="p-col-3">
+                  <div class="cover-photo-holder">
+                    <img src="{{ '/assets/imagesPagesInfos/escapegame_conjuring1.JPG' }}" />
+                  </div>
+              </div>
+              <div class="p-col-7">
+                <div class="p-grid">
+                  <div class="p-col-3">
+                    <h5> Mission </h5>
+                    <p> <b>{{ activ?.mission }}</b> </p> <br/>
+                    <h5> n° : {{ activ?.id }} </h5>
+                  </div>
+                  <div class="p-col-3">
+                    <h5> TARIFS: </h5>
+                    <ul>
+                      <li> Normal: <b>{{ activ?.tarifNormal }}</b> € </li>
+                      <li> Jeune: <b>{{ activ?.tarifJeune }}</b> € </li>
+                      <li> Etudiant: <b>{{ activ?.tarifEtudiant }}</b> € </li> 
+                    </ul>
+                  </div>
+                  <div class="p-col-4">
+                    <h5> NOMBRE DE PERSONNES: </h5>
+                    <ul>
+                      <li> Maximum: <b>{{ activ?.nbMax }}</b> </li>
+                      <li> Minimul: <b>{{ activ?.nbMin }}</b> </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="p-col-1">
+                  <div class="cover-photo-holder">
+                    <img src="{{ '/assets/imagesPagesInfos/escapegame_conjuring2.JPG' }}" />
+                  </div>
+              </div>
+              <div class="p-col-12" style="text-align: center">
+                  <h5> Description: </h5>
+                  <p> <b>{{ activ?.description }}</b> </p>
+              </div>
+            </div>
+      </p-accordionTab>
+    </p-accordion>
+  
+  </div>
+  

@@ -1,0 +1,17 @@
+<div class="header"> &nbsp; &nbsp;
+
+    <img src="{{ '/assets/images/logo.JPG' }}" /> &nbsp; &nbsp; &nbsp; &nbsp;
+
+    <button pButton type="button" label="page d'accueil" (click)="pageaccueil($event)"></button> &nbsp; &nbsp;
+    <button pButton type="button" label="Qui sommes nous" (click)="quisommesnous($event)"></button> &nbsp; &nbsp;
+    <button pButton type="button" label="contact" (click)="pagecontact($event)"></button> &nbsp; &nbsp;
+
+    <button pButton type="button" label="Réserver" (click)="client($event)"></button> &nbsp; &nbsp;
+
+    <p-splitButton label="+ infos" (onClick)="save('error')" [model]="items" styleClass="ui-button-danger"></p-splitButton> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+
+    <p-splitButton label="espace client" (onClick)="save('error')" [model]="itemss" styleClass="ui-button-danger"></p-splitButton> &nbsp; &nbsp;
+
+    <p-splitButton label="espace membre" (onClick)="save('error')" [model]="item" styleClass="ui-button-danger" ></p-splitButton>
+    
+</div>

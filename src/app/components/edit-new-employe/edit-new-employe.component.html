@@ -1,0 +1,48 @@
+<div class="newEmploye panel panel-default">
+  
+  <div class="panel-body"> 
+    <br/> <h3>Ajouter un employé</h3> <br/>
+      
+    <div class="formulaire">
+      <div class="input-group">
+        <span class="input-group-addon">Nom: </span>
+        <input style="margin-left: 10%" class="form-control" [(ngModel)]="employe_in_progress.nom" type="text" placeholder="Employe Nom" name="nom" />
+      </div> <br/>
+      <div class="input-group">
+        <span class="input-group-addon">Prenom: </span>
+        <input style="margin-left: 10%" class="form-control" [(ngModel)]="employe_in_progress.prenom"  type="text" placeholder="Employe Prenom" name="prenom" />
+      </div> <br/>
+      <div class="input-group">
+        <span class="input-group-addon">Tel: </span>
+        <input style="margin-left: 10%" class="form-control" [(ngModel)]="employe_in_progress.tel" type="text" placeholder="Employe Telephone" name="tel" />
+      </div> <br/>
+      <div class="input-group">
+        <span class="input-group-addon">Mail: </span>
+        <input style="margin-left: 10%" class="form-control" [(ngModel)]="employe_in_progress.mail" type="text" placeholder="Employe Mail" name="mail" />
+      </div> <br/>
+      <div class="input-group">
+        <span class="input-group-addon">Matricule: </span>
+        <input style="margin-left: 10%" class="form-control" [(ngModel)]="employe_in_progress.matricule" type="text" placeholder="Employe Matricule" name="matricule" />
+      </div> <br/>
+      <div class="input-group">
+        <span class="input-group-addon">Poste: </span>
+        <input style="margin-left: 10%" class="form-control" [(ngModel)]="employe_in_progress.type" type="text" placeholder="Employe type" name="type" />
+      </div> <br/>
+      <div class="input-group">
+          <span class="input-group-addon">Login: </span>
+          <input style="margin-left: 10%" class="form-control" [(ngModel)]="employe_in_progress.userName" type="text" placeholder="UserName" name="userName" />
+      </div> <br/>
+      <div class="input-group">
+          <span class="input-group-addon">Mot de passe: </span>
+          <input style="margin-left: 10%" class="form-control" [(ngModel)]="employe_in_progress.passWord" type="text" placeholder="PassWord" name="passWord" />
+      </div> <br/>
+       
+      <div class="button">
+        <input type="button" value="Ajouter Employe" (click)="addUpdateEmployeClicked()" style="background-color: rgb(167, 197, 221); margin-left: 50px"/>
+        <input type="button" value="Retour" (click)="goBackButtonPressed()" style="background-color: rgb(167, 197, 221); margin-left: 50px"/>
+      </div>
+    </div>
+
+  </div>
+
+</div>
